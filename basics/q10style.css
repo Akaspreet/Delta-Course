@@ -1,0 +1,12 @@
+h1{
+    font-family: League spartan, optima, Brush Script MT, Georgia;
+    color: #ffa511;
+    text-align: center;
+    font-weight: 900;
+    font-size: 55px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: double rgb(111, 194, 230) underline;
+    text-transform: uppercase;
+
+}

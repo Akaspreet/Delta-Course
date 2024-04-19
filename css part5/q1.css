@@ -1,0 +1,24 @@
+.parent{
+    width: 400px;
+    height: 400px;
+    border: solid 2px rgb(75, 207, 189);
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.child{
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: rgb(128, 128, 128);
+    color: black;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-direction: row;
+    text-align: center;
+}

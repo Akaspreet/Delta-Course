@@ -1,0 +1,25 @@
+.parent{
+    height: 50px;
+    width: 900px;
+    background-color: pink;
+    border: solid 2px rgb(84, 155, 84);
+    border-radius: 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    align-content: center;
+
+    
+
+
+}
+.childs{
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5px;
+    line-height: 50px;
+
+}
