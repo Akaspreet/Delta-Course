@@ -1,6 +1,6 @@
 let btn = document.querySelector("button");
 let url2 = "https://dog.ceo/api/breeds/image/random";
-
+// hnji 
 btn.addEventListener("click", async () =>{
     let link = await getimage();
     let img = document.querySelector("#result");
