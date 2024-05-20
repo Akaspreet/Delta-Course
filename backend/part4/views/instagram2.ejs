@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <!-- <style>
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    </style> -->
+
+    <!-- this is one way to do  -->
+
+    <!-- par agar humme multiple css files lagani ho jaise abhi public folder se style.css use karni  -->
+    <!-- agar humara public folder hai toh ejs se humne express.static folder name kara toh public ke ander 
+    ki saari files available ho jaaegi -->
+
+    <!-- <link rel="stylesheet" href="/public/style.css"> -->
+
+    <!-- toh hum directly likh skte  -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>This page belongs to  @
+        <%= data.name %>
+    </h2>
+    <button>Follow</button>
+    <button>Message</button>
+    <h4>Followers: <%= data.followers %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Following: <%= data.following %></h4>
+
+    <hr>
+    <% for(let post of data.posts) { %>
+        <img src="<%= post.image %>" alt="some image">
+        <p>Likes: <%= post.likes %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comments: <%= post.comments %></p>
+
+    <% } %>
+
+   
+    
+</body>
+</html>

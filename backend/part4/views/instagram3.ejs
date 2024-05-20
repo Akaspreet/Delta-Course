@@ -1,0 +1,26 @@
+<!-- if like html me ye head vaala part baar baar repeat ho rha tha toh maine kya kiya ki ye cut karke 
+views me includes ke folder me head.ejs banae or usme kya kara daal diya head.ejs me head part taaki baar baar
+naa likhna padde
+ -->
+
+ <!-- yahna dhyan rkhna includes se pehle "/" nhi lagana  -->
+<%- include("includes/head.ejs") %>
+<body>
+    <h2>This page belongs to  @
+        <%= data.name %>
+    </h2>
+    <button>Follow</button>
+    <button>Message</button>
+    <h4>Followers: <%= data.followers %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Following: <%= data.following %></h4>
+
+    <hr>
+    <% for(let post of data.posts) { %>
+        <img src="<%= post.image %>" alt="some image">
+        <p>Likes: <%= post.likes %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comments: <%= post.comments %></p>
+
+    <% } %>
+
+   
+    
+</body>
+</html>
